@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Reception
+namespace Desk
 {
      /// <summary>
     /// Interaction logic for App.xaml

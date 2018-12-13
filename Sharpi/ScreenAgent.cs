@@ -1,14 +1,13 @@
 
 using System;
-using Smart;
 
-namespace Reception
+namespace Sharpi
 {
 
     /// <summary>
     /// A host is a controller of device.
     /// </summary>
-    public class CameraController : Controller
+    public class ScreenAgent : Agent
     {
         // event management
 
