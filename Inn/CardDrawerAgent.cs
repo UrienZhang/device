@@ -2,7 +2,7 @@
 using System;
 using Sharpi;
 
-namespace Desk
+namespace Inn
 {
 
     /// <summary>

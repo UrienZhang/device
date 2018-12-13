@@ -6,7 +6,7 @@ namespace Sharpi
 {
 
     /// <summary>
-    /// A host is a controller of device.
+    /// An agent with Windows Presentation Foundation interface.
     /// </summary>
     public class WpfAgent : Agent
     {
