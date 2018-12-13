@@ -32,10 +32,8 @@ namespace Sharpi
         {
             handlers = new Map<string, Handler>(32);
 
-            foreach (MethodInfo mi in typ.GetMethods(BindingFlags.Public | BindingFlags.Instance))
-
+            foreach (MethodInfo mi in GetType().GetMethods(BindingFlags.Public | BindingFlags.Instance))
             {
-
                 // verify the return type
                 Type ret = mi.ReturnType;
                 bool async;
@@ -60,24 +58,5 @@ namespace Sharpi
 
         }
 
-        public void start(SignalContext sc)
-        {
-
-        }
-
-        public void Stop()
-        {
-
-        }
-
-        public void Restart()
-        {
-
-        }
-
-        public void Pause()
-        {
-
-        }
     }
 }

@@ -12,7 +12,7 @@ namespace Desk
         {
             Add(new DisplayAgent());
 
-            Add(new CameraController());
+            Add(new CardDrawerAgent());
         }
 
     }

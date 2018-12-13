@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Teller.csproj"
+                "${workspaceFolder}/Sharpi.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

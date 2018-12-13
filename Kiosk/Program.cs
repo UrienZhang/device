@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Desk
+namespace Kiosk
 {
     /// <summary>
     /// </summary>

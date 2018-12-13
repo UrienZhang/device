@@ -13,5 +13,15 @@ namespace Sharpi
         {
             agents.Add(ctr);
         }
+
+        public void Start()
+        {
+            for (int i = 0; i < agents.Count; i++)
+            {
+                var a = agents[i];
+                a.Init();
+            }
+        }
+
     }
 }

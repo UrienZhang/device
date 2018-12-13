@@ -20,5 +20,10 @@ namespace Sharpi
 
         }
 
+        public virtual void Init()
+        {
+
+        }
+
     }
 }

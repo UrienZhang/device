@@ -8,7 +8,7 @@ namespace Kiosk
     /// <summary>
     /// A host is a controller of device.
     /// </summary>
-    public class DisplayAgent : ScreenAgent
+    public class DisplayAgent : WpfAgent
     {
         // event management
 

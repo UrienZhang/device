@@ -1,21 +1,25 @@
 
 using System;
+using System.Threading;
 using Sharpi;
 
 namespace Desk
 {
 
     /// <summary>
-    /// A host is a controller of device.
     /// </summary>
-    public class DisplayAgent : ScreenAgent
+    public class DisplayAgent : WpfAgent
     {
         // event management
 
+        Thread sta;
 
         // threading
-
-
-        // remote instrumentation and monitoring
+        public override void Init()
+        {
+            sta = new Thread(x => App.Run(new MyWindow()));
+            sta.SetApartmentState(ApartmentState.STA);
+            sta.Start();
+        }
     }
 }
