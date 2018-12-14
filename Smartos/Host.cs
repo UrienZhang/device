@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Sharpi
+namespace Smartos
 {
     public class Host : Controller
     {

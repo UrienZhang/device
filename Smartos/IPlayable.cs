@@ -1,6 +1,6 @@
 using System;
 
-namespace Sharpi
+namespace Smartos
 {
     public interface IPlayable
     {

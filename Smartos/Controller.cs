@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Sharpi
+namespace Smartos
 {
 
     /// <summary>
@@ -57,6 +57,5 @@ namespace Sharpi
         {
 
         }
-
     }
 }

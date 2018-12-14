@@ -1,7 +1,7 @@
 
 using System;
 
-namespace Sharpi
+namespace Smartos
 {
 
     public class Signal

@@ -10,7 +10,7 @@ namespace Inn
     {
         public static void Main() 
         {
-            DeskHost h = new DeskHost();
+            InnHost h = new InnHost();
             h.Start();
         }
     }

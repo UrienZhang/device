@@ -1,14 +1,14 @@
 
 using System;
-using Sharpi;
+using Smartos;
 
-namespace Kiosk
+namespace Hall
 {
 
     /// <summary>
     /// A host is a controller of device.
     /// </summary>
-    public class DisplayAgent : WpfAgent
+    public class CameraAgent : Agent
     {
         // event management
 

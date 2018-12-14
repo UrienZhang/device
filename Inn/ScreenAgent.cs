@@ -2,14 +2,14 @@
 using System;
 using System.Threading;
 using System.Windows.Threading;
-using Sharpi;
+using Smartos;
 
 namespace Inn
 {
 
     /// <summary>
     /// </summary>
-    public class DisplayAgent : WpfAgent
+    public class ScreenAgent : WpfAgent
     {
         // event management
 

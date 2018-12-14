@@ -1,6 +1,6 @@
 
 using System;
-using Sharpi;
+using Smartos;
 
 namespace Inn
 {
@@ -8,7 +8,7 @@ namespace Inn
     /// <summary>
     /// A host is a controller of device.
     /// </summary>
-    public class CardDrawerAgent : Agent
+    public class CardRwAgent : Agent
     {
         // event management
 

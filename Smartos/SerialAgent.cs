@@ -2,13 +2,13 @@
 using System;
 using System.Windows;
 
-namespace Sharpi
+namespace Smartos
 {
 
     /// <summary>
     /// An agent with serial port communication interface.
     /// </summary>
-    public class PortAgent : Agent
+    public class SerialAgent : Agent
     {
     }
 }

@@ -2,7 +2,7 @@
 using System;
 using System.Windows;
 
-namespace Sharpi
+namespace Smartos
 {
 
     /// <summary>
