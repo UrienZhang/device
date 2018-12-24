@@ -1,6 +1,6 @@
 using Windows.Media.Capture;
 
-namespace Smartos
+namespace Greatbone.Device
 {
     public abstract class CameraAgent
     {

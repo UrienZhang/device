@@ -2,14 +2,14 @@
 using System;
 using System.Threading;
 using System.Windows.Threading;
-using Smartos;
+using Greatbone.Device;
 
 namespace Inn
 {
 
     /// <summary>
     /// </summary>
-    public class ScreenAgent : WpfAgent
+    public class ScreenAgent : Greatbone.Device.ScreenAgent
     {
         // event management
 

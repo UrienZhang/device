@@ -1,6 +1,6 @@
 
 using System;
-using Smartos;
+using Greatbone.Device;
 
 namespace Hall
 {
@@ -8,7 +8,7 @@ namespace Hall
     /// <summary>
     /// A host is a controller of device.
     /// </summary>
-    public class ScreenAgent : WpfAgent
+    public class ScreenAgent : Greatbone.Device.ScreenAgent
     {
         // event management
 

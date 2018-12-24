@@ -1,7 +1,7 @@
 
 using System;
 using System.Speech.Synthesis;
-using Smartos;
+using Greatbone.Device;
 
 namespace Hall
 {

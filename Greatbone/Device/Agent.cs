@@ -1,24 +1,41 @@
 
 using System;
 using System.Collections.Concurrent;
-using System.Reflection;
 using System.Threading;
+using System.Reflection;
 using System.Threading.Tasks;
 
-namespace Smartos
+namespace Greatbone.Device
 {
 
     /// <summary>
-    /// The structural and functional descriptor for a controller class.!--
-    /// A controller consists of remote management and signal processing
+    /// The structural and functional descriptor for a controller class.
     /// </summary>
-    public abstract class Controller
+    /// <remarks>
+    /// A controller consists of remote management and signal processing
+    /// </remarks>
+    public class Agent
     {
+
+        AgentSet parent;
+
+
+        public void Enqueue(Signal sig)
+        {
+
+        }
+
+        public virtual void Init()
+        {
+
+        }
+
         // event management
         ConcurrentQueue<Signal> signals;
 
 
-        Map<string, Handler> handlers;
+        // all handler methods
+        Map<string, Action> actions;
 
 
         // threading
@@ -28,9 +45,9 @@ namespace Smartos
         short status;
 
 
-        public Controller()
+        protected internal Agent()
         {
-            handlers = new Map<string, Handler>(32);
+            actions = new Map<string, Action>(32);
 
             foreach (MethodInfo mi in GetType().GetMethods(BindingFlags.Public | BindingFlags.Instance))
             {
@@ -42,14 +59,14 @@ namespace Smartos
                 else continue;
 
                 ParameterInfo[] pis = mi.GetParameters();
-                Handler act;
+                Action act;
                 if (pis.Length == 1 && pis[0].ParameterType == typeof(SignalContext))
                 {
-                    act = new Handler(this, mi, async, null);
+                    act = new Action(this, mi, async, null);
                 }
                 else continue;
 
-                handlers.Add(act.Name, act);
+                actions.Add(act.Name, act);
             }
         }
 
@@ -57,5 +74,6 @@ namespace Smartos
         {
 
         }
+
     }
 }

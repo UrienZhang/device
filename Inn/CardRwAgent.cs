@@ -1,6 +1,6 @@
 
 using System;
-using Smartos;
+using Greatbone.Device;
 
 namespace Inn
 {

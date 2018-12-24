@@ -1,11 +1,11 @@
 
 using System;
-using Smartos;
+using Greatbone.Device;
 
 namespace Hall
 {
 
-    public class HallHost : Host
+    public class HallHost : Device
     {
 
         public HallHost()

@@ -2,7 +2,7 @@
 using System;
 using System.Windows;
 
-namespace Smartos
+namespace Greatbone.Device
 {
 
     /// <summary>

@@ -2,19 +2,18 @@
 using System;
 using System.Windows;
 
-namespace Smartos
+namespace Greatbone.Device
 {
 
     /// <summary>
-    /// An agent with Windows Presentation Foundation interface.
+    /// A screen in WPF
     /// </summary>
-    public class WpfAgent : Agent
+    public class ScreenAgent : Agent
     {
         // app
         Application app;
 
-
-        public WpfAgent() 
+        public ScreenAgent()
         {
             app = new Application();
         }

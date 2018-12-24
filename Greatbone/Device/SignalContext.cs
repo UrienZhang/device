@@ -1,7 +1,7 @@
 
 using System;
 
-namespace Smartos
+namespace Greatbone.Device
 {
 
     public class SignalContext

@@ -1,8 +1,8 @@
 using System;
 
-namespace Smartos
+namespace Greatbone.Device
 {
-    public interface IPlayable
+    public interface IManageable
     {
         void start(SignalContext sc);
 

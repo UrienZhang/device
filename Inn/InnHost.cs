@@ -1,11 +1,11 @@
 
 using System;
-using Smartos;
+using Greatbone.Device;
 
 namespace Inn
 {
 
-    public class InnHost : Host
+    public class InnHost : Device
     {
 
         public InnHost()

@@ -1,23 +1,24 @@
 using System;
 using System.Reflection;
 
-namespace Smartos
+namespace Greatbone.Device
 {
 
-    public class Handler
+    /// signal action
+    ///
+    public class Action
     {
-        Controller declarer;
+        Agent declarer;
 
         string name;
 
         bool async;
 
-
         readonly Action<SignalContext> @do;
 
-        internal Handler(Controller ctr, MethodInfo mi, bool async, string name)
+        internal Action(Agent declarer, MethodInfo mi, bool async, string name)
         {
-            this.declarer = ctr;
+            this.declarer = declarer;
             this.name = name;
         }
 

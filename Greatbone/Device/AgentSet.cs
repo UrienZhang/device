@@ -2,12 +2,15 @@
 using System;
 using System.Collections.Generic;
 
-namespace Smartos
+namespace Greatbone.Device
 {
-    public class Host : Controller
+    public abstract class AgentSet : Agent
     {
-
         List<Agent> agents = new List<Agent>(8);
+
+        protected AgentSet() 
+        {
+        }
 
         public void Add(Agent ctr)
         {
