@@ -7,12 +7,12 @@
     <ProjectGuid>{14A40F4F-8DDD-48D7-94B2-BEC625095966}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>App2</RootNamespace>
-    <AssemblyName>App2</AssemblyName>
+    <RootNamespace>Greatbone.Device</RootNamespace>
+    <AssemblyName>Greatbone.Device</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -133,10 +133,11 @@
     <Compile Include="Sample\Program.cs" />
     <Compile Include="Sample\ScreenAgent.cs" />
     <Compile Include="Sample\VoiceAgent.cs" />
-    <Compile Include="Source\Action.cs" />
+    <Compile Include="Source\Routine.cs" />
     <Compile Include="Source\Agent.cs" />
     <Compile Include="Source\AgentSet.cs" />
     <Compile Include="Source\CameraAgent.cs" />
+    <Compile Include="Source\Host.cs" />
     <Compile Include="Source\DbContext.cs" />
     <Compile Include="Source\Device.cs" />
     <Compile Include="Source\IManageable.cs" />
@@ -188,6 +189,12 @@
     <PackageReference Include="System.ValueTuple">
       <Version>4.5.0</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Greatbone\Greatbone.csproj">
+      <Project>{fcda6e39-1276-4e92-ab32-a87633a08152}</Project>
+      <Name>Greatbone</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -36,7 +36,7 @@ namespace Greatbone.Device
 
 
         // all handler methods
-        Map<string, Action> actions;
+        Map<string, Routine> routines;
 
 
         // threading
@@ -48,7 +48,7 @@ namespace Greatbone.Device
 
         protected internal Agent()
         {
-            actions = new Map<string, Action>(32);
+            routines = new Map<string, Routine>(32);
 
             foreach (MethodInfo mi in GetType().GetMethods(BindingFlags.Public | BindingFlags.Instance))
             {
@@ -60,14 +60,14 @@ namespace Greatbone.Device
                 else continue;
 
                 ParameterInfo[] pis = mi.GetParameters();
-                Action act;
+                Routine rtn;
                 if (pis.Length == 1 && pis[0].ParameterType == typeof(SignalContext))
                 {
-                    act = new Action(this, mi, async, null);
+                    rtn = new Routine(this, mi, async, null);
                 }
                 else continue;
 
-                actions.Add(act.Name, act);
+                routines.Add(rtn.Name, rtn);
             }
         }
 

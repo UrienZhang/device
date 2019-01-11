@@ -6,7 +6,7 @@ namespace Greatbone.Device
 
     /// signal action
     ///
-    public class Action
+    public class Routine
     {
         Agent declarer;
 
@@ -16,7 +16,7 @@ namespace Greatbone.Device
 
         readonly Action<SignalContext> @do;
 
-        internal Action(Agent declarer, MethodInfo mi, bool async, string name)
+        internal Routine(Agent declarer, MethodInfo mi, bool async, string name)
         {
             this.declarer = declarer;
             this.name = name;
